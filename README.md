@@ -8,7 +8,7 @@ To run this project simply type 'go run gossip.go'
 You can track the progress of the gossip nodes speaking to each
 other by watching the console print outs.
 
-##REQUIREMENTS##
+##REQUIREMENTS
 
 Have 8 computing nodes each with two neighbors
 (can select them at random or keep a fix to
@@ -20,7 +20,7 @@ Keeps a Hbcounter gets increase every X amount of time (you choose)
 Send their HB tables to its neighbor every Y amount of time (you choose)
 Simulate one node failing every Z amount of time and how the tables change
 
-##UNDERSTANDING LOGS##
+##UNDERSTANDING LOGS
 When you first run the program you will see each node print out
 the id's of their chosen neighbors, example:
 
@@ -62,7 +62,7 @@ it will show a special log displaying similar information to an update, example:
 
 
 
-##MY IMPLEMENTATION##
+##MY IMPLEMENTATION
 
 The amount of nodes is determined by a constant defined on line 18
 named "num_nodes"
@@ -86,7 +86,7 @@ detect node death on every run.
 To remedy this simply increase the amount of cycles or increase
 the amount of Heartbeats skipped.
 
-##NODES##
+##NODES
 Each node has 2 GoRoutines that are simultaneously running
 a loop that updates their HBCounters and sending out their
 Heart Beat Tables
